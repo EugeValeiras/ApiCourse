@@ -1,0 +1,17 @@
+{
+  "name": "clarin",
+  "script": "./server/index.js",
+  "cwd" : "/usr/app/clarin",
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": 4001,
+    "HOSTURL": "http://clarin.clapps.io",
+    "FACEBOOK_CLIENT_ID": "938343669656140",
+    "FACEBOOK_CLIENT_SECRET": "6c54e2e93f32c23540ec4e4ca1a4d97b",
+    "GOOGLE_CLIENT_ID": "37423034294-4v9s0d8a6udb71pveak7f01e184478pl.apps.googleusercontent.com",
+    "GOOGLE_CLIENT_SECRET": "I_uaAZTYrW32fanhpp99Yi7L"
+  },
+  "host":"45.55.233.187",
+  "port": 4010,
+  "girhubUrl": "https://github.com/EugeValeiras/ApiCourse"
+}
