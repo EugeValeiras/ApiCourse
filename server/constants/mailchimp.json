@@ -1,0 +1,23 @@
+{
+
+  "production": {
+    "API_KEY": "PRODUCTION_API_KEY",
+    "MANDRILL_API_KEY": "PRODUCTION_MANDRILL_API_KEY"
+  },
+
+  "test": {
+    "API_KEY": "TEST_API_KEY",
+    "MANDRILL_API_KEY": "TEST_MANDRILL_API_KEY"
+  },
+
+  "local": {
+    "API_KEY": "LOCAL_API_KEY",
+    "MANDRILL_API_KEY": "LOCAL_MANDRILL_API_KEY"
+  },
+
+  "default": {
+    "API_KEY": "DEFAULT_API_KEY",
+    "MANDRILL_API_KEY": "DEFAULT_MANDRILL_API_KEY"
+  }
+
+}

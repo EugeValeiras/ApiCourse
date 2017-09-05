@@ -1,0 +1,74 @@
+{
+  "project": {
+    "version": "0.0.0",
+    "name": "StartApp"
+  },
+  "apps": [
+    {
+      "root": "client",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "ms",
+      "styles": [
+        "../node_modules/normalize.css/normalize.css",
+        "../node_modules/quill/dist/quill.snow.css",
+        "../node_modules/angular-calendar/dist/css/angular-calendar.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "styles.scss",
+        "layout.scss"
+      ],
+      "scripts": [
+        "../node_modules/hammerjs/hammer.js",
+        "../node_modules/sortablejs/Sortable.js",
+        "../node_modules/css-element-queries/src/ResizeSensor.js"
+      ],
+      "addons": [
+        "../node_modules/font-awesome/fonts/*.+(otf|eot|svg|ttf|woff|woff2)"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts",
+        "production": "environments/environment.prod.ts",
+        "test": "environments/environment.test.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "scss",
+    "component": {
+      "inlineTemplate": false,
+      "spec": true
+    }
+  }
+}

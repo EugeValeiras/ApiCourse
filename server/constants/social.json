@@ -1,0 +1,19 @@
+{
+  "facebook": {
+    "clientID":     "FACEBOOK_CLIENT_ID",
+    "clientSecret": "FACEBOOK_CLIENT_SECRET",
+    "callbackURL":  "/api/authenticate/facebook/callback"
+  },
+
+  "twitter": {
+    "clientID":     "TWITTER_CLIENT_ID",
+    "clientSecret": "TWITTER_CLIENT_SECRET",
+    "callbackURL":  "/api/authenticate/twitter/callback"
+  },
+
+  "google": {
+    "clientID":     "GOOGLE_CLIENT_ID",
+    "clientSecret": "GOOGLE_CLIENT_SECRET",
+    "callbackURL":  "/api/authenticate/google/callback"
+  }
+}

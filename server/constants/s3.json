@@ -1,0 +1,27 @@
+{
+
+  "production": {
+    "bucket": "PRODUCTION_BUCKET_NAME",
+    "accessKeyId": "PRODUCTION_KEY_ID",
+    "secretAccessKey": "PRODUCTION_SECRET_ACCESS_KEY"
+  },
+
+  "test": {
+    "bucket": "TEST_BUCKET_NAME",
+    "accessKeyId": "TEST_KEY_ID",
+    "secretAccessKey": "TEST_SECRET_ACCESS_KEY"
+  },
+
+  "local": {
+    "bucket": "LOCAL_BUCKET_NAME",
+    "accessKeyId": "LOCAL_KEY_ID",
+    "secretAccessKey": "LOCAL_SECRET_ACCESS_KEY"
+  },
+
+  "default": {
+    "bucket": "DEFAULT_BUCKET_NAME",
+    "accessKeyId": "DEFAULT_KEY_ID",
+    "secretAccessKey": "DEFAULT_SECRET_ACCESS_KEY"
+  }
+
+}
