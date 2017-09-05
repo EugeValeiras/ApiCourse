@@ -1,10 +1,10 @@
 {
-  "name": "clarin",
+  "name": "ApiCourse",
   "script": "./server/index.js",
-  "cwd" : "/usr/app/clarin",
+  "cwd" : "/usr/app/ApiCourse",
   "env": {
     "NODE_ENV": "production",
-    "PORT": 4001,
+    "PORT": 4010,
     "HOSTURL": "http://clarin.clapps.io",
     "FACEBOOK_CLIENT_ID": "938343669656140",
     "FACEBOOK_CLIENT_SECRET": "6c54e2e93f32c23540ec4e4ca1a4d97b",
