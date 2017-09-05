@@ -32,6 +32,10 @@ export class Products {
     return this.products;
   }
 
+  get(index) {
+    return this.products[index]
+  }
+
   add(product) {
     this.products.push(product);
     return this.products;

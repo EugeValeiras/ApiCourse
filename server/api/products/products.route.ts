@@ -15,5 +15,9 @@ export class ProductsRoute {
     router
       .route('/api/product/reset')
       .get(ProductsController.reset)
+
+    router
+      .route('/api/product/:id')
+      .get(ProductsController.getOne)
   }
 }

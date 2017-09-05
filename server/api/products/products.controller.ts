@@ -10,6 +10,11 @@ export class ProductsController {
     res.status(200).json(products.all())
   }
 
+  static getOne(req: express.Request, res: express.Response) {
+    const products = Products.getInstance();
+    res.status(200).json(products.get(req.params.id))
+  }
+
   static addOne(req: express.Request, res: express.Response) {
     const products = Products.getInstance();
     const product = req.body;
