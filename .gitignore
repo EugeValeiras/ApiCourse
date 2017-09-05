@@ -41,11 +41,12 @@ client/**/*.map
 # server
 server/**/*.js
 server/**/*.map
+server/.env
 !server/inedx.js
 
 # e2e
 /e2e/*.js
-/e2e/*.map
+
 #System Files
 .DS_Store
 Thumbs.db

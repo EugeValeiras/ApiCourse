@@ -1,5 +1,3 @@
-/// <reference path='../typings/index.d.ts' />
-
 'use strict';
 
 if (process.env.NEW_RELIC_ENABLED === 'true')
