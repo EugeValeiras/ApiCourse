@@ -15,7 +15,19 @@ import {RoutesConfig} from './config/routes.conf';
 import {Routes} from './routes/index';
 
 const app = express();
-app.options(cors());
+app.options('*', cors());
+
+app.use(function (req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*'); // restrict it to the required domain
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+  // Set custom headers for CORS
+  res.header('Access-Control-Allow-Headers', 'Content-type,Accept,X-Access-Token');
+  if (req.method === 'OPTIONS') {
+    res.status(200).end();
+  } else {
+    next();
+  }
+});
 
 console.log(`enviroment: ${process.env.NODE_ENV}`);
 
