@@ -4,10 +4,10 @@ export class Products {
 
   private _score: number = 0;
   private productsInit = [
-    {name: 'Product #1', cost: 10},
-    {name: 'Product #2', cost: 20},
-    {name: 'Product #3', cost: 30},
-    {name: 'Product #4', cost: 40},
+    {id: '1', name: 'Banana', description: 'Banana Loca', price: 10},
+    {id: '2', name: 'Apple', description: 'Apple Inc', price: 10000},
+    {id: '3', name: 'Orange', description: 'La naranja mecanica', price: 5},
+    {id: '4', name: 'lemon', description: 'Acid Lemon', price: 1},
   ];
 
   private products = [...this.productsInit];
@@ -32,12 +32,13 @@ export class Products {
     return this.products;
   }
 
-  get(index) {
-    return this.products[index]
+  get(id) {
+    return this.products.find(product => product.id == id);
   }
 
   add(product) {
-    this.products.push(product);
+    const ids = this.products.map(prod => prod.id);
+    product.id = Math.max.apply(null, ids) + 1;
     return this.products;
   }
 

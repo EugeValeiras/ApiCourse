@@ -10,14 +10,14 @@ export class ProductsRoute {
       .route('/api/product')
       .get(ProductsController.getAll)
       .post(ProductsController.addOne)
-      .delete(ProductsController.remove)
+      .delete(ProductsController.remove);
 
     router
       .route('/api/product/reset')
-      .get(ProductsController.reset)
+      .get(ProductsController.reset);
 
     router
       .route('/api/product/:id')
-      .get(ProductsController.getOne)
+      .get(ProductsController.getOne);
   }
 }
